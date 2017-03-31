@@ -27,4 +27,4 @@ app.get('/:date', function (req, res) {
     res.send(JSON.stringify(output));
 })
     
-app.listen(3000);
+app.listen(process.env.PORT || <default port>);
